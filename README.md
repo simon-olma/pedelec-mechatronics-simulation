@@ -1,12 +1,6 @@
 
 # Pedelec – Modellbasierte Analyse eines mechatronischen Systems
 
-Dieses MATLAB-/Simulink-Lehrbeispiel begleitet die Lehrveranstaltung
-
-**„Anforderungen und methodische Vorgehensweise bei der Konstruktion eines mechatronischen Systems am Beispiel eines Pedelecs“**
-
-Hochschule Bielefeld (HSBI) – Konstruktionsmethoden in der Mechatronik.
-
 Ziel ist es, anhand eines Pedelecs zu zeigen, wie physikalische Modelle die Auslegung und Bewertung mechatronischer Systeme unterstützen.
 
 Das Projekt umfasst zwei aufeinander aufbauende Untersuchungen:
@@ -25,8 +19,6 @@ Die Modelle dienen ausschließlich Lehrzwecken und verwenden vereinfachte, exemp
 | `HSBI_Pedelec_Analyse_2.m` | Durchführung und Auswertung der Simulink-Simulation |
 | `HSBI_Pedelec_Model.slx` | Dynamisches Pedelec-Gesamtsystemmodell |
 | `GPX_Simulink_Profil.mat` | Vorbereitetes Strecken- und Steigungsprofil |
-
-Die ursprüngliche Aufbereitung der GPX-Daten ist nicht Bestandteil dieses Projekts. Das benötigte Streckenprofil liegt bereits als MAT-Datei vor.
 
 ## 2. Voraussetzungen und Verwendung
 
@@ -210,8 +202,8 @@ $$
 
 Für den gewählten Referenzmotor ergeben sich im betrachteten Beispiel näherungsweise:
 
-- Steigungsfahrt: $i\geq 6{,}49$
-- Ebene Fahrt: $i\leq 6{,}04$
+- Steigungsfahrt: $i\geq 6,49$
+- Ebene Fahrt: $i\leq 6,04$
 
 **Ergebnis:** Eine gemeinsame feste Motor-Rad-Übersetzung erfüllt mit diesem Referenzmotor nicht beide Betriebsfälle. Ein Mittelmotor mit schaltbarer Übersetzung kann dagegen geeignete Übersetzungen für beide Fahrzustände bereitstellen.
 
@@ -294,7 +286,7 @@ $$
 Der kumulierte elektrische Energieverbrauch wird aus der Leistungsaufnahme berechnet:
 
 $$
-E_V(t)=\frac{1}{3600}\int_0^t P_{\mathrm{el}}(\tau)\,d\tau
+E_V(t)=\int_0^t P_{\mathrm{el}}(\tau)\,d\tau
 $$
 
 Dabei wird $P_{\mathrm{el}}$ in Watt und die Zeit in Sekunden verwendet; $E_V$ ergibt sich in Wattstunden (Wh).
@@ -352,11 +344,7 @@ Insbesondere gelten folgende Vereinfachungen:
 - Vereinfachte Motorgrenzen ohne thermisches Modell
 - Vereinfachtes Batteriemodell ohne Alterungs- und Temperatureinflüsse
 
-Die angenommene kurzzeitige Motor-Spitzenleistung ist nicht mit der dauerhaft verfügbaren Nenndauerleistung gleichzusetzen.
-
-**Hinweis:** Das Ende der Motorunterstützung bei 25 km/h begrenzt nicht die Fahrzeuggeschwindigkeit. Insbesondere auf Gefällestrecken können ohne aktive Bremsung deutlich höhere Geschwindigkeiten entstehen.
-
-Die Modellvorhersagen müssen für eine reale Produktentwicklung durch geeignete Messungen und Versuche überprüft werden.
+Die angenommene kurzzeitige Motor-Spitzenleistung ist nicht mit der dauerhaft verfügbaren Nenndauerleistung gleichzusetzen. Das Ende der Motorunterstützung bei 25 km/h begrenzt nicht die Fahrzeuggeschwindigkeit. Insbesondere auf Gefällestrecken können ohne aktive Bremsung deutlich höhere Geschwindigkeiten entstehen.
 
 ## 7. Weiterführende Untersuchungen
 
