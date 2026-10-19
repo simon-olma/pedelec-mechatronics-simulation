@@ -301,6 +301,16 @@ Dabei bezeichnet $E_{\mathrm{Batt,nom}}$ die angenommene Batterienennenergie in 
 
 Der Ladezustand `SoC` wird im MATLAB-Modell als Anteil zwischen 0 und 1 geführt.
 
+### Aufbau des Simulink-Modells
+
+Die zeitabhängige Simulation erfolgt mit dem Modell
+`HSBI_Pedelec_Model.slx`. 
+
+![Simulink-Gesamtmodell des Pedelecs](pedelec_simulink_overview.PNG)
+
+*Abbildung: Top-Level-Struktur des Simulink-Modells
+für die dynamische Analyse des Pedelecs.*
+
 ### 5.5 Referenzstrecke
 
 Die dynamische Simulation verwendet ein vorbereitetes Streckenprofil aus GPX-Daten.
