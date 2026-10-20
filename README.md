@@ -8,7 +8,7 @@ Das Projekt umfasst zwei aufeinander aufbauende Untersuchungen:
 1. **Stationäre Antriebsauslegung:** Motorleistungsbedarf, Motorgrenzen und zulässige Übersetzungen.
 2. **Dynamische Systemsimulation:** Fahrverhalten und elektrischer Energiebedarf bei unterschiedlichen Unterstützungsstrategien.
 
-Die Modelle dienen ausschließlich Lehrzwecken und verwenden vereinfachte, exemplarisch gewählte Parameter.
+Die Modelle dienen Lehrzwecken und verwenden vereinfachte, exemplarisch gewählte Parameter.
 
 ## 1. Projektdateien
 
